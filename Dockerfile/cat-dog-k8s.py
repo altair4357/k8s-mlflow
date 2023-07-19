@@ -94,5 +94,8 @@ if __name__ == "__main__":
         mlflow.log_metric("test_loss", score[0])
         mlflow.log_metric("test_accuracy", score[1])
 
+        # Log parameters
+        mlflow.log_param("optimizer", optimizer)
+
         # Log model
         mlflow.keras.log_model(model, "model", registered_model_name="MnistModel-k8s")
