@@ -95,4 +95,4 @@ if __name__ == "__main__":
         mlflow.log_metric("test_accuracy", score[1])
 
         # Log model
-        mlflow.keras.log_model(model, "model", registered_model_name="MnistModel")
+        mlflow.keras.log_model(model, "model", registered_model_name="MnistModel-k8s")
