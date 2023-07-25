@@ -12,4 +12,4 @@ RUN pip install --upgrade pip &&\
     pip install numpy pandas scikit-learn mlflow boto3 tensorflow
 
 # Run cat-dog.py when the container launches
-ENTRYPOINT ["python", "cat-dog.py"]
+ENTRYPOINT ["python", "mnist-digit-k8s.py"]
