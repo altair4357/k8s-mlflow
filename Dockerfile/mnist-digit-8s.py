@@ -98,4 +98,4 @@ if __name__ == "__main__":
         mlflow.log_param("optimizer", optimizer)
 
         # Log model
-        mlflow.keras.log_model(model, "model", registered_model_name="cat-dog-k8s")
+        mlflow.keras.log_model(model, "model", registered_model_name="mnist-digit-k8s")
