@@ -8,7 +8,7 @@ spec:
       containers:
       - name: mnist-job
         image: altair4357/custom-mlflow:0.1  # 여기에 실제 도커 이미지를 입력해야 합니다.
-        args: ["python", "cat-dog", "5", "sparse_categorical_crossentropy", "adam"]  # 파이썬 스크립트와 파라미터를 넘겨줍니다.
+        args: ["python", "mnist-digit", "5", "sparse_categorical_crossentropy", "adam"]  # 파이썬 스크립트와 파라미터를 넘겨줍니다.
         env:
         - name: MLFLOW_TRACKING_URI
           value: "http://localhost:5000"
